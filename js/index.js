@@ -47,65 +47,10 @@ msg.on("input",()=>{
     }
 });
 
-// ===============================
-// // Count 
-// let days = $('.days').text();
-// let hours = $('.hours').text();
-// let mins = $('mins').text();
-// let secs = $('.secs').text();
-// let days = $('.days');
-// let hours = $('.hours');
-// let mins = $('.mins');
-// let secs = $('.secs');
-
-// // let currDate = new Date();
-// // console.log(Date()); // Sun Apr 21 2024 21:59:32
-// // console.log(currDate); // Sun Apr 21 2024 21:59:32
-// // console.log(currDate.getDate()); // day is 21 
-// // console.log(currDate.getHours()); // 22 hr
-// // console.log(currDate.getSeconds()); // 40 secs
-// // console.log(currDate.getMinutes()); // 16 mins
-
-// let selectDate = new Date(2021,10,10,9,56,0);
-// // console.log(selectDate); // Mon Jul 06 2026 23:10:05
-// // console.log(selectDate.getDate()); // day is 6
-// // console.log(selectDate.getHours()); // 23 hr
-// // console.log(selectDate.getSeconds()); // 5 secs
-// // console.log(selectDate.getMinutes()); // 10 mins
-
-// // const [day , hr , m , sec] = [selectDate.getDate() , selectDate.getHours(), selectDate.getMinutes(), selectDate.getSeconds()];
-
-// function remainDate ( day , hr , m , sec ){
-//     let currDate = new Date();
-
-//     let currDays = currDate.getDate();
-//     let currHours = currDate.getHours();
-//     let currMins = currDate.getMinutes();
-//     let currSecs = currDate.getSeconds();
-
-//     let remainDays = day - currDays;
-//     let remainHours = hr - currHours;
-//     let remainMins = m - currMins;
-//     let remainSecs = sec - currSecs;
-
-//     days.text(remainDays);
-//     hours.text(remainHours);
-//     mins.text(remainMins);
-//     secs.text(remainSecs);
-
-//     // days.text(1000)
-
-//     // console.log(d);
-// }
-
-// $(window).on('load',()=>{
-//     remainDate( selectDate.getDate(), selectDate.getHours(), selectDate.getMinutes(), selectDate.getSeconds() );
-// })
-
 // ======================================
 // countDownToTime
 $(window).on('load',()=>{
-    countDownToTime('10 october 2021 9:56:00');
+    countDownToTime('10 october 2025 9:56:00');
 });
 function countDownToTime(seletedDate){
     let future = new Date(seletedDate).getTime(); // get msecs
