@@ -32,6 +32,7 @@ for(let i=0;i<singersH.length;i++){
 
 // ===========================================
 // textarea
+/*
 let msg = $("textarea");
 let charsRminingNum = $("#charsNum");
 msg.on("input",()=>{
@@ -44,6 +45,21 @@ msg.on("input",()=>{
     }
     else{
         charsRminingNum.html(`your available character finished`);
+    }
+});
+*/
+let msg = $("textarea");
+let charsRminingNum = $("#charsNum");
+let maxChars = charsRminingNum.text();
+msg.on("input",()=>{
+    // console.log(`msg = ${msg.val()} \n length = ${msg.val().length}`);
+    let currCharsNum = msg.val().length;
+    let remaining = maxChars - currCharsNum;
+    if(remaining <= 0){
+        charsRminingNum.html(`your available character finished`);
+    }
+    else{
+        charsRminingNum.text(remaining);
     }
 });
 
